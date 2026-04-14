@@ -6,9 +6,9 @@ website:
 
 format:
   html:
-    theme: morph
-    css: styles.css
-    toc: true
+    theme: 
+      - morph
+      - styles.css
 
 editor: visual
 
