@@ -290,20 +290,20 @@
     },
     "PerformanceAnalytics": {
       "Package": "PerformanceAnalytics",
-      "Version": "2.0.8",
+      "Version": "2.1.0",
       "Source": "Repository",
       "Type": "Package",
       "Title": "Econometric Tools for Performance and Risk Analysis",
-      "Authors@R": "c( person(given=c(\"Brian\",\"G.\"),family=\"Peterson\",role=c(\"cre\",\"aut\",\"cph\"), email=\"brian@braverock.com\") , person(given=\"Peter\",family=\"Carl\",role=c(\"aut\",\"cph\"), email=\"peter@braverock.com\") , person(given=\"Kris\",family=\"Boudt\",role=c(\"ctb\",\"cph\")) , person(given=\"Ross\",family=\"Bennett\",role=\"ctb\") , person(given=\"Joshua\",family=\"Ulrich\",role=\"ctb\") , person(given=\"Eric\",family=\"Zivot\",role=\"ctb\") , person(given=\"Dries\",family=\"Cornilly\",role=\"ctb\") , person(given=\"Eric\",family=\"Hung\",role=\"ctb\") , person(given=\"Matthieu\",family=\"Lestel\",role=\"ctb\") , person(given=\"Kyle\",family=\"Balkissoon\",role=\"ctb\")   , person(given=\"Diethelm\",family=\"Wuertz\",role=\"ctb\")   , person(given=c(\"Anthony\",\"Alexander\"),family=\"Christidis\",role=\"ctb\")   , person(given=\"R. Douglas\",family=\"Martin\",role=\"ctb\")   , person(given=c(\"Zeheng\", \"Zenith\"),family=\"Zhou\",role=\"ctb\")   , person(given=c(\"Justin\", \"M.\"),family=\"Shea\",role=\"ctb\") , person(given=\"Dhairya\",family=\"Jain\",role=\"ctb\") )",
-      "Date": "2024-12-04",
-      "Description": "Collection of econometric functions for performance and risk  analysis. In addition to standard risk and performance metrics, this  package aims to aid practitioners and researchers in utilizing the latest research in analysis of non-normal return streams.  In general, it is most  tested on return (rather than price) data on a regular scale, but most  functions will work with irregular return data as well, and increasing numbers of functions will work with P&L or price data where possible.",
+      "Authors@R": "c( person(given=c(\"Brian\",\"G.\"),family=\"Peterson\",role=c(\"cre\",\"aut\",\"cph\"), email=\"brian@braverock.com\") , person(given=\"Peter\",family=\"Carl\",role=c(\"aut\",\"cph\"), email=\"peter@braverock.com\") , person(given=\"Kris\",family=\"Boudt\",role=c(\"ctb\",\"cph\")) , person(given=\"Ross\",family=\"Bennett\",role=\"ctb\") , person(given=\"Joshua\",family=\"Ulrich\",role=\"ctb\") , person(given=\"Eric\",family=\"Zivot\",role=\"ctb\") , person(given=\"Dries\",family=\"Cornilly\",role=\"ctb\") , person(given=\"Eric\",family=\"Hung\",role=\"ctb\") , person(given=\"Matthieu\",family=\"Lestel\",role=\"ctb\") , person(given=\"Kyle\",family=\"Balkissoon\",role=\"ctb\") , person(given=\"Diethelm\",family=\"Wuertz\",role=\"ctb\") , person(given=c(\"Anthony\",\"Alexander\"),family=\"Christidis\",role=\"ctb\") , person(given=\"R. Douglas\",family=\"Martin\",role=\"ctb\") , person(given=c(\"Zeheng\", \"Zenith\"),family=\"Zhou\",role=\"ctb\") , person(given=c(\"Justin\", \"M.\"),family=\"Shea\",role=\"ctb\") , person(given=\"Dhairya\",family=\"Jain\",role=\"ctb\") , person(given=\"Talgat\",family=\"Daniyarov\",role=\"ctb\") )",
+      "Date": "2026-04-05",
+      "Description": "Collection of econometric functions for performance and risk analysis. In addition to standard risk and performance metrics, this package aims to aid practitioners and researchers in utilizing the latest research in analysis of non-normal return streams.  In general, it is most tested on return (rather than price) data on a regular scale, but most functions will work with irregular return data as well, and increasing numbers of functions will work with P&L or price data where possible.",
       "Imports": [
         "methods",
         "quadprog",
         "zoo"
       ],
       "Depends": [
-        "R (>= 3.5.0)",
+        "R (>= 4.0.0)",
         "xts (>= 0.10.0)"
       ],
       "Suggests": [
@@ -315,8 +315,8 @@
         "gamlss.dist",
         "robustbase",
         "quantreg",
-        "tinytest",
         "ggplot2",
+        "vdiffr",
         "RColorBrewer",
         "googleVis",
         "plotly",
@@ -327,17 +327,20 @@
         "RPESE",
         "RobStatTM",
         "fit.models",
-        "R.rsp"
+        "R.rsp",
+        "testthat (>= 3.0.0)",
+        "covr"
       ],
       "VignetteBuilder": "R.rsp",
       "License": "GPL-2 | GPL-3",
       "Encoding": "UTF-8",
       "LazyData": "true",
       "URL": "https://github.com/braverock/PerformanceAnalytics",
-      "Copyright": "(c) 2004-2022",
-      "RoxygenNote": "7.3.2",
+      "Copyright": "(c) 2004-2026",
+      "RoxygenNote": "7.3.3",
+      "Config/testthat/edition": "3",
       "NeedsCompilation": "yes",
-      "Author": "Brian G. Peterson [cre, aut, cph], Peter Carl [aut, cph], Kris Boudt [ctb, cph], Ross Bennett [ctb], Joshua Ulrich [ctb], Eric Zivot [ctb], Dries Cornilly [ctb], Eric Hung [ctb], Matthieu Lestel [ctb], Kyle Balkissoon [ctb], Diethelm Wuertz [ctb], Anthony Alexander Christidis [ctb], R. Douglas Martin [ctb], Zeheng Zenith Zhou [ctb], Justin M. Shea [ctb], Dhairya Jain [ctb]",
+      "Author": "Brian G. Peterson [cre, aut, cph], Peter Carl [aut, cph], Kris Boudt [ctb, cph], Ross Bennett [ctb], Joshua Ulrich [ctb], Eric Zivot [ctb], Dries Cornilly [ctb], Eric Hung [ctb], Matthieu Lestel [ctb], Kyle Balkissoon [ctb], Diethelm Wuertz [ctb], Anthony Alexander Christidis [ctb], R. Douglas Martin [ctb], Zeheng Zenith Zhou [ctb], Justin M. Shea [ctb], Dhairya Jain [ctb], Talgat Daniyarov [ctb]",
       "Maintainer": "Brian G. Peterson <brian@braverock.com>",
       "Repository": "CRAN"
     },
@@ -605,11 +608,11 @@
     },
     "anytime": {
       "Package": "anytime",
-      "Version": "0.3.12",
+      "Version": "0.3.13",
       "Source": "Repository",
       "Type": "Package",
       "Title": "Anything to 'POSIXct' or 'Date' Converter",
-      "Date": "2025-07-14",
+      "Date": "2026-04-13",
       "Authors@R": "person(\"Dirk\", \"Eddelbuettel\", role = c(\"aut\", \"cre\"), email = \"edd@debian.org\", comment = c(ORCID = \"0000-0001-6419-907X\"))",
       "Description": "Convert input in any one of character, integer, numeric, factor, or ordered type into 'POSIXct' (or 'Date') objects, using one of a number of predefined formats, and relying on Boost facilities for date and time parsing.",
       "URL": "https://github.com/eddelbuettel/anytime, https://dirk.eddelbuettel.com/code/anytime.html",
@@ -620,10 +623,10 @@
         "R (>= 3.2.0)"
       ],
       "Imports": [
-        "Rcpp (>= 1.0.8)"
+        "Rcpp (>= 1.1.1)"
       ],
       "LinkingTo": [
-        "Rcpp (>= 1.0.8)",
+        "Rcpp (>= 1.1.1)",
         "BH"
       ],
       "Suggests": [
@@ -631,6 +634,7 @@
         "gettz"
       ],
       "RoxygenNote": "6.0.1",
+      "VignetteBuilder": "Rcpp",
       "NeedsCompilation": "yes",
       "Author": "Dirk Eddelbuettel [aut, cre] (ORCID: <https://orcid.org/0000-0001-6419-907X>)",
       "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
@@ -3657,10 +3661,10 @@
     },
     "mvtnorm": {
       "Package": "mvtnorm",
-      "Version": "1.3-6",
+      "Version": "1.3-7",
       "Source": "Repository",
       "Title": "Multivariate Normal and t Distributions",
-      "Date": "2026-03-13",
+      "Date": "2026-04-14",
       "Authors@R": "c(person(\"Alan\", \"Genz\", role = \"aut\"), person(\"Frank\", \"Bretz\", role = \"aut\"), person(\"Tetsuhisa\", \"Miwa\", role = \"aut\"), person(\"Xuefei\", \"Mi\", role = \"aut\"), person(\"Friedrich\", \"Leisch\", role = \"ctb\"), person(\"Fabian\", \"Scheipl\", role = \"ctb\"), person(\"Bjoern\", \"Bornkamp\", role = \"ctb\", comment = c(ORCID = \"0000-0002-6294-8185\")), person(\"Martin\", \"Maechler\", role = \"ctb\", comment = c(ORCID = \"0000-0002-8685-9910\")), person(\"Torsten\", \"Hothorn\", role = c(\"aut\", \"cre\"), email = \"Torsten.Hothorn@R-project.org\", comment = c(ORCID = \"0000-0001-8301-0471\")))",
       "Description": "Computes multivariate normal and t probabilities, quantiles, random deviates,  and densities. Log-likelihoods for multivariate Gaussian models and Gaussian copulae  parameterised by Cholesky factors of covariance or precision matrices are implemented  for interval-censored and exact data, or a mix thereof. Score functions for these  log-likelihoods are available. A class representing multiple lower triangular matrices  and corresponding methods are part of this package.",
       "Imports": [
@@ -3761,7 +3765,7 @@
     },
     "openssl": {
       "Package": "openssl",
-      "Version": "2.3.5",
+      "Version": "2.4.0",
       "Source": "Repository",
       "Type": "Package",
       "Title": "Toolkit for Encryption, Signatures and Certificates Based on OpenSSL",
@@ -4397,7 +4401,7 @@
     },
     "purrr": {
       "Package": "purrr",
-      "Version": "1.2.1",
+      "Version": "1.2.2",
       "Source": "Repository",
       "Title": "Functional Programming Tools",
       "Authors@R": "c( person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0003-4757-117X\")), person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = \"aut\"), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"), comment = c(ROR = \"https://ror.org/03wc8by49\")) )",
@@ -4861,7 +4865,7 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.2.0",
+      "Version": "1.2.2",
       "Source": "Repository",
       "Type": "Package",
       "Title": "Project Environments",
@@ -4903,13 +4907,13 @@
         "webfakes"
       ],
       "Encoding": "UTF-8",
-      "NeedsCompilation": "yes",
       "RoxygenNote": "7.3.3",
       "VignetteBuilder": "knitr",
       "Config/Needs/website": "tidyverse/tidytemplate",
       "Config/testthat/edition": "3",
       "Config/testthat/parallel": "true",
       "Config/testthat/start-first": "bioconductor,python,install,restore,snapshot,retrieve,remotes",
+      "NeedsCompilation": "no",
       "Author": "Kevin Ushey [aut, cre] (ORCID: <https://orcid.org/0000-0003-2880-7407>), Hadley Wickham [aut] (ORCID: <https://orcid.org/0000-0003-4757-117X>), Posit Software, PBC [cph, fnd]",
       "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
       "Repository": "CRAN"
@@ -6415,7 +6419,7 @@
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.7.2",
+      "Version": "0.7.3",
       "Source": "Repository",
       "Title": "Vector Helpers",
       "Authors@R": "c( person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\"), person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = \"aut\"), person(\"Davis\", \"Vaughan\", , \"davis@posit.co\", role = c(\"aut\", \"cre\")), person(\"data.table team\", role = \"cph\", comment = \"Radix sort based on data.table's forder() and their contribution to R's order()\"), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")) )",
@@ -6455,6 +6459,7 @@
       "Config/testthat/edition": "3",
       "Config/testthat/parallel": "true",
       "Encoding": "UTF-8",
+      "KeepSource": "true",
       "Language": "en-GB",
       "RoxygenNote": "7.3.3",
       "NeedsCompilation": "yes",
